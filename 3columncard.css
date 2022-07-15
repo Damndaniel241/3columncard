@@ -1,0 +1,145 @@
+
+
+.container{
+    display:flex;
+    box-sizing:border-box;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:30em;
+    
+
+
+}
+.container div{
+    width:20em;
+    
+
+}
+
+.sedan{
+   background-color: rgb(227,136,38);
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+   
+   
+
+.suv{
+    background-color:hsl(184,100%,22%) ;
+    /* width:20em; */
+}
+
+
+.luxury{
+    background-color: hsl(179, 100%, 13%) ;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+p,h1,button,img{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:relative;
+    right:-2em;
+    top:40px;
+}
+
+
+
+
+
+button{
+    height:40px;
+    background-color:hsl(0, 0%, 95%);
+    /* position:relative;
+    top:200px; */
+    width:9rem;
+
+    border:none;
+    border-radius:20px;
+}
+
+ #one{
+    color:hsl(31,77%,52%);
+
+}
+
+#one:hover{
+    color:hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+    background-color:hsl(31,77%,52%);
+}
+
+
+
+#two{
+    color:hsl(184,100%,22%);
+}
+
+#two:hover{
+    color:hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+    background-color:hsl(184,100%,22%);
+
+}
+
+#three{
+    color:hsl(179, 100%, 13%);
+}
+
+#three:hover{
+    color:hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%);
+
+}
+
+p{
+   line-height:27px;
+   color:hsla(0, 0%, 100%, 0.75);
+
+
+}
+
+
+h1{
+    position:relative;
+    left: 31px;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+
+
+@media screen and (max-width:800px){
+    .container{
+        display: flex;
+        /* box-sizing: border-box; */
+        flex-direction: column;
+        flex-flow: wrap;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+       
+         }
+
+     .container div{
+         height: 100%;
+     }
+        .sedan{
+           
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 0;
+        }
+
+        .luxury{
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+    }
