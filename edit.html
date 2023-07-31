@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Edit Note</title>
+</head>
+<body>
+    <nav>
+        <div id="header">
+            <h1>Notes App</h1>
+            <h4>Take notes and forget</h4>
+            
+        </div>
+    </nav>
+
+    <div id="menu">
+        <div>
+            <a id="go-back" href="index.html">Home</a>
+            <h4 id="last-edit-time"style="font-weight: 100;"> </h4>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="container">
+            <form action="#" id="editForm">
+                <input type="text" name="" id="note-title" placeholder="Note title">
+                <textarea name="" id="note-content" cols="30" rows="10" placeholder="Enter note text"></textarea>
+                <div id="edit-buttons">
+                    <button type="submit" id="saveBtn">save note</button>
+                    <button type="button" id="removeBtn">Remove note</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script src="edit.js"></script>
+    <!-- <script type="module" src="app.js"></script> -->
+</body>
+</html>

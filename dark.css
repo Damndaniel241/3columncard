@@ -1,0 +1,15 @@
+body{
+    background-color: var(--mainBlack);
+}
+
+:root{
+    --mainBlack:#353D2F;
+    --darkGreen:#515B3A;
+    --midGreen:#6BA368;
+    --lightGreen:#9CFC97;
+}
+
+nav{
+    background-color: var(--lightGreen);
+    color: white;
+}

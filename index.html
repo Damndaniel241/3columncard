@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="3columncard.css">
-  <link rel="stylesheet" href="">
-  
-  <title>Frontend Mentor | 3-column preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-  <div class="sedan"> 
-  <img src="icon-sedans.svg">
-  <h1>Sedans</h1>
-  <p>Choose a sedan for its <br>affordability and excellent<br> fuel economy. Ideal for<br> cruising in the city 
-  or on<br> your next road trip.</p>
-  <button id="one" type="button">Learn More</button>
-  </div>
+    <nav>
+        <div id="header">
+            <h1>Notes App</h1>
+            <h4>Take notes and forget</h4>
+        </div>
+    </nav>
 
-  <div class="suv">
-  <img src="icon-suvs.svg">
-  <h1>SUVs</h1>
-  <p>
-  Take an SUV for its spacious<br> interior, power, and <br>versatility. Perfect for your<br> next family vacation 
-  and<br> off-road adventures.</p>
-  <button id="two" type="button">Learn More</button>  </div>
+    <div id="filter-div">
+        <div>
+        <input type="text" name="" id="todo-filter" placeholder="Filter Notes">
+        <select name="" id="select-filter">
+            <option value="1">Sort by last edited</option>
+            <option value="2">Sort by recently created</option>
+            <option value="3">Sort Alphabetically</option>
+        </select>
+    </div>
+    </div>
+    <hr>
 
-  <div class="luxury">
-    <img src="icon-luxury.svg">
-  <h1>Luxury</h1>
-  <p>Cruise in the best car brands<br> without the bloated prices.<br> Enjoy the enhanced comfort<br>of a luxury 
-  rental and arrive<br> in style.
-</p> 
-  <button id="three" type="button">Learn More</button>
-  </div>
+    <div id="notes">
+        <div id="notes-container">
+        <!-- <div id="empty">No notes to show</div> -->
+        <!-- <a href="#"><div class="note-item"> <h3>mth 317</h3><h5><i>Last edited a few seconds ago</i></h5></div></a>
+        <a href="#"><div class="note-item"> <h3>Unamed folder</h3><h5><i>Last edited an hour ago</i></h5></div></a> -->
+        <div id="noteListWrapper">
+            
+        </div> 
+        <button type="button" id="createBtn">Create Note</button>
+    </div>
+    
 </div>
+<script src="app.js"></script>
+<!-- <Script type="module" src="edit.js"></Script> -->
 </body>
 </html>
