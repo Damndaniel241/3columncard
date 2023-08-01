@@ -34,6 +34,25 @@ note.addEventListener("click", () => {
 
 
 
+function checkDisplay() {
+  const noteItemsExist = document.querySelector('.note-item');
+
+  if (noteItemsExist) {
+      // If at least one element with class "note-item" exists, hide the "emptyDiv"
+      emptyDiv.style.display = 'none';
+      console.log(emptyDiv.style.display);
+  } else {
+      // If no "note-item" elements found, show the "emptyDiv"
+      emptyDiv.style.display = 'block';
+      console.log(emptyDiv.style.display);
+  }
+}
+checkDisplay();
+const observer = new MutationObserver(checkDisplay);
+        // const noteListWrapper = document.getElementById('noteListWrapper');
+        observer.observe(noteListWrapper, { childList: true });
+
+
 createBtn.addEventListener("click", () => {
     // Generate a unique note ID (you can use a UUID library for a more robust solution)
     const noteId = Date.now().toString();
@@ -49,6 +68,7 @@ createBtn.addEventListener("click", () => {
 
 
 window.addEventListener("load", () => {
+  // checkDisplay();
     const storedData = localStorage.getItem("notes");
     if (storedData) {
         const notes = JSON.parse(storedData);

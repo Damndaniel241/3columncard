@@ -1,6 +1,5 @@
-
-  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
-  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap'); */
+/* 
+ 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 
@@ -12,6 +11,7 @@
     right:10px;
     z-index:10;
    cursor: pointer;
+
   }
 
 
@@ -35,7 +35,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* text-align: left; */
+
     padding: 2em 0;
     color: white;
 
@@ -69,7 +69,6 @@ input{
     width:40%;
     display: flex;
     gap:1em;
-    /* justify-content: space-between; */
 }
 
 #filter-div div > *{
@@ -101,11 +100,7 @@ input{
     flex-direction: column;
     gap:1.3em;
 }
-/* 
-#empty{
-    display: none;
-    text-align: center;
-} */
+
 hr{
     margin-bottom: 1.5em;
 }
@@ -128,18 +123,6 @@ hr{
 .note-item h5{
     color: gray;
 }
-
-/* #createBtn{
-    height:45px;
-    padding: 10px;
-    background-color: rgb(82, 171, 255);
-    border: none;
-    color: white;
-    cursor:pointer;
-    align-self: flex-start;
-     width: 40%; 
-    
-}*/
 
 
 button:hover{
@@ -195,7 +178,7 @@ a#go-back{
 #saveBtn{
     height:45px;
     padding: 10px;
-    /* align-self: flex-start; */
+
     background-color:rgba(37, 226, 154, 0.493);
     border:none;
     cursor: pointer;
@@ -205,7 +188,7 @@ a#go-back{
 #removeBtn{
     height:45px;
     padding: 10px;
-    /* align-self: flex-end; */
+
     background-color:rgba(165, 42, 42, 0.493);
     border:none;
     cursor: pointer;
@@ -234,13 +217,336 @@ a#go-back{
     width:90%;
 }
 
-#menu div{
-    /* flex-direction: column; */
-}
+
 
 #filter-div div{
     display: flex;
     flex-direction: column;
     gap:1em;
+}
+} */
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+#createBtn{
+  height:6em;
+  width:6em;
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+  z-index:10;
+ cursor: pointer;
+ background-color: #52abff;
+ border-radius: 50%;
+
+}
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  font-weight:400;
+}
+
+
+
+
+nav{
+  background-color: rgb(82, 171, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  padding: 2em 0;
+  color: white;
+
+
+
+}
+
+
+#header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap:0.5em;
+  -webkit-box-pack:left;
+      -ms-flex-pack:left;
+          justify-content:left;
+  width:40%;
+
+}
+
+input{
+  padding-left: 1.3em;
+}
+
+#filter-div{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+  background-color: rgb(255, 248, 240);
+}
+
+#filter-div div{
+  width:40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap:1em;
+}
+
+#filter-div div > *{
+  height:40px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+#notes{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+#notes-container{
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3em;
+ 
+ 
+}
+
+#noteListWrapper{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap:1.3em;
+}
+
+hr{
+  margin-bottom: 1.5em;
+}
+
+.note-item{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  gap: 0.5em;
+  background-color: rgb(255, 248, 240);
+  border:1px solid grey;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.note-item:hover{
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.note-item h5{
+  color: gray;
+}
+
+
+button:hover{
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+select{
+  background-color: white;
+}
+
+#note-title,textarea{
+  padding:0.8em;
+  border: 1px solid gray;
+}
+
+#menu{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+#menu div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width:40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  
+}
+a#go-back{
+  color: rgb(82, 171, 255);
+}
+#content{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container{
+ width:40%;
+
+}
+
+#editForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+
+#saveBtn{
+  height:45px;
+  padding: 10px;
+
+  background-color:rgba(37, 226, 154, 0.493);
+  border:none;
+  cursor: pointer;
+  color: grey;
+}
+
+#removeBtn{
+  height:45px;
+  padding: 10px;
+
+  background-color:rgba(165, 42, 42, 0.493);
+  border:none;
+  cursor: pointer;
+  color: white;
+}
+#edit-buttons{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+#notes-container a{
+  text-decoration:none;
+  color:initial;
+}
+
+@media screen and (max-width:800px){
+  body{
+      font-size: 75%;
+  }
+
+
+
+
+#filter-div div,#container,#notes-container,#header,#menu div{
+  width:90%;
+}
+
+
+
+#filter-div div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap:1em;
 }
 }
